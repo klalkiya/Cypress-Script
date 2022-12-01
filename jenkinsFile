@@ -16,7 +16,7 @@ pipeline {
         stage('e2e Tests') {
            steps {
                sh "npm i"
-               sh "npx cypress run --browser ${BROWSER}" --spec ${SPEC}
+               sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
            }
         }
        stage('Deploying') {
@@ -24,10 +24,6 @@ pipeline {
                echo "Deploy the app"
            }
        }
-       post{
-            always{
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir:'cypress/report', reportFiles:'index.html', reportName:'HTML Report', reportTiltles:])
-            }
-       }
+
    }
 }
