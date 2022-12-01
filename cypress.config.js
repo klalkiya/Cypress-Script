@@ -1,14 +1,17 @@
-const { defineConfig } = require('cypress')
-
+const { defineConfig } = require('cypress');
 module.exports = defineConfig({
+  "viewportWidth": 1200,
   e2e: {
+    // We've imported your old cypress plugins here.
+    // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      // e2e testing node events setup code
-    },
-  },
-  component: {
-    setupNodeEvents(on, config) {
-      // component testing node events setup code
-    },
-  },
-})
+      on('task', {
+        log(message) {
+          console.log(message)
+          return null
+        },
+      })
+      return require('./cypress/Plugins/index.js')(on, config);
+    }
+  }
+});
