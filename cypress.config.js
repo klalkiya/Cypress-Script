@@ -6,7 +6,7 @@ module.exports = defineConfig({
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
-    supportFile: 'support/e2e.js',
+    supportFile: 'False',
     setupNodeEvents(on, config) {
       on('task', {
         log(message) {
