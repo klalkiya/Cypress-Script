@@ -14,10 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'import "cypress-real-events/support";
-22
+
 require('cypress-xpath')
-23
 
 
 // Alternatively you can use CommonJS syntax:
