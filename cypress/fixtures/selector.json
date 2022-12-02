@@ -1,0 +1,6 @@
+{
+    "addToCartButton": "#product-addtocart-button",
+    "successMessage": ".product-info-view .message-success",
+    "cartIconProductCount": ".counter qty",
+    "errorMessage": ".product-info-view .message-error"
+}

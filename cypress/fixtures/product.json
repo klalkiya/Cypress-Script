@@ -1,0 +1,28 @@
+{
+    "simpleProduct": {
+            "isproductExits" : true,
+            "productName": "Test Simple",
+            "simpleProductUrl": "https://blomstoggren.stag2.salecto.dk/test-simple"
+    },
+    "configProduct": {
+            "isproductExits" : true,
+            "productName": "Config Product New",
+            "configProductUrl": "https://blomstoggren.stag2.salecto.dk/test-simple-config"
+    },
+    "groupProduct": {
+        "isproductExits" : true,
+        "productName": "simple product",
+        "groupProductUrl": "https://blomstoggren.stag2.salecto.dk/salecto-test-grouped"
+    },
+    "bundleProduct": {
+        "isproductExits" : true,
+        "productName": "simple product",
+        "bundleProductUrl":"https://blomstoggren.stag2.salecto.dk/test-simple-bundle"
+    },
+    "downlodProduct": {
+        "isproductExits" : true,
+        "productName": "simple product",
+        "downlodroductUrl":"https://blomstoggren.stag2.salecto.dk/test-simple-download"
+    }
+}  
+            
