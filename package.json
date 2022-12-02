@@ -4,16 +4,20 @@
   "description": "My first cypress project",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open" : "npx cypress open",
     "cypress:runDefault" : "npx cypress run --spec cypress/e2e/myFirst.cy.js",
     "cypress:chrome" : "npx cypress run --spec cypress/e2e/myFirst.cy.js --browser=chrome"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-
+  "dependencies": {
+    "cypress-real-events": "^1.7.0"
+  },
   "devDependencies": {
-     "cypress": "^11.0.1",
+    "cypress": "^11.0.1",
     "cypress-log-to-output": "^1.1.2",
     "cypress-wait-until": "^1.7.2",
     "cypress-xpath": "^1.6.2"
