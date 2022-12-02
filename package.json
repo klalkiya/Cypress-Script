@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open" : "npx cypress open",
-    "cypress:runDefault" : "npx cypress run --spec cypress/e2e/myFirst.cy.js",
-    "cypress:chrome" : "npx cypress run --spec cypress/e2e/myFirst.cy.js --browser=chrome"
+    "cypress:runDefault" : "npx cypress run --spec cypress/integration/myFirst.js",
+    "cypress:chrome" : "npx cypress run --spec cypress/integration/myFirst.js --browser=chrome"
   },
   "keywords": [],
   "author": "",
